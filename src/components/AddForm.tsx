@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react';
 import toast from 'react-hot-toast';
 import { uploadRestaurant } from '../../api calls/api_services';
+import Footer from './Footer';
 
 export default function AddForm() {
     const [name, setName] = useState<string>("");
@@ -75,6 +76,7 @@ export default function AddForm() {
     };
 
     return (
+        <>
         <div className="min-h-screen bg-white">
             <div className="container mx-auto px-4 py-12">
                 <h1 className="text-3xl md:text-4xl font-bold text-gray-800 mb-8 text-center">
@@ -200,5 +202,7 @@ export default function AddForm() {
                 </form>
             </div>
         </div>
+        <Footer/>
+        </>
     );
 }

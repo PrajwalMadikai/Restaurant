@@ -104,7 +104,7 @@ export default function Home() {
         <div className="min-h-screen bg-blue-50">
         {/* Blue Header Section (changed from gray-50 to blue-50) */}
         <div className="relative bg-cover bg-center h-96 flex items-center justify-center text-white" style={{ backgroundImage: "url('https://source.unsplash.com/1600x900/?restaurants')" }}>
-            <div className="absolute inset-0 bg-black opacity-90"></div>
+            <div className="absolute inset-0 bg-blue-800   opacity-90"></div>
             <div className="z-10 text-center px-4">
                 <h1 className="text-5xl font-bold mb-4 tracking-tight">Discover Your Favorite Restaurants</h1>
                 <p className="text-xl max-w-2xl mx-auto">Explore a wide range of dining options tailored just for you.</p>
@@ -120,19 +120,7 @@ export default function Home() {
             <div className="container mx-auto px-4 relative z-10">
                 <div className="flex items-center justify-between mb-12">
                     <h2 className="text-4xl font-bold tracking-tight text-blue-800">Featured Restaurants</h2>
-                    <div className="hidden md:flex items-center space-x-3">
-                        <div className="flex items-center bg-gray-100 rounded-full px-4 py-2">
-                            <input type="text" placeholder="Search restaurants..." className="bg-transparent border-none focus:outline-none text-gray-800 placeholder-gray-500 w-64" />
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 text-gray-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
-                            </svg>
-                        </div>
-                        <select className="bg-gray-100 border-none rounded-full px-4 py-2 focus:outline-none text-gray-800">
-                            <option>Sort by: Featured</option>
-                            <option>Sort by: Name</option>
-                            <option>Sort by: Location</option>
-                        </select>
-                    </div>
+                    
                 </div>
     
                 {/* Restaurant Grid with Reduced Height */}
@@ -153,7 +141,6 @@ export default function Home() {
                                         <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
                                             <path d="M12 17.27L18.18 21l-1.64-7.03L22 9.24l-7.19-.61L12 2 9.19 8.63 2 9.24l5.46 4.73L5.82 21z" />
                                         </svg>
-                                        <span className="ml-1 text-gray-700 font-medium">4.8</span>
                                     </div>
                                 </div>
                                 <div className="flex items-center mb-3 text-gray-600">
@@ -170,10 +157,7 @@ export default function Home() {
                                     <p>{restaurant.contact}</p>
                                 </div>
                                 <div className="flex items-center justify-between pt-4 border-t border-gray-200">
-                                    <div className="flex space-x-2">
-                                        <span className="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-md font-medium">Italian</span>
-                                        <span className="inline-block bg-blue-100 text-blue-800 text-xs px-2 py-1 rounded-md font-medium">$$</span>
-                                    </div>
+                                    
                                     <div className="space-x-2">
                                         <button onClick={() => handleEditClick(restaurant)} className="bg-blue-100 text-blue-800 px-3 py-1 rounded-md hover:bg-blue-200 transition duration-300 font-medium">
                                             Edit
