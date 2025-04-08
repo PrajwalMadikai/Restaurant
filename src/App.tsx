@@ -15,11 +15,12 @@ function App() {
     <Toaster/>
     <BrowserRouter>
       <Header />
+      <Footer/>
       <Routes>
         <Route path='/' element={<Homepage/>}/>
         <Route path='/add' element={<AddForm/>}/>
       </Routes>
-      <Footer/>
+   
     </BrowserRouter>
    
     </>
