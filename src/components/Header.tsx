@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 function Header() {
   return (
-    <header className="h-14 w-full flex justify-between items-center p-4 bg-black text-white">
+    <header className="h-14 w-full flex justify-between items-center p-4 bg-gray-950 text-white">
       <Link to='/'>
       <h1 className="text-lg font-bold sm:text-xl md:text-xl ">
        Taste Explorer
