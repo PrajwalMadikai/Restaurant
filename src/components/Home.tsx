@@ -172,28 +172,10 @@ export default function Home() {
                     ))}
                 </div>
     
-                {/* Pagination with updated styling */}
-                <div className="mt-12 flex justify-center">
-                    <div className="flex space-x-2">
-                        <button className="w-10 h-10 flex items-center justify-center bg-gray-200 text-blue-800 rounded-md hover:bg-gray-300 transition duration-300">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
-                            </svg>
-                        </button>
-                        <button className="w-10 h-10 flex items-center justify-center bg-blue-600 text-white font-bold rounded-md">1</button>
-                        <button className="w-10 h-10 flex items-center justify-center bg-gray-200 text-blue-800 rounded-md hover:bg-gray-300 transition duration-300">2</button>
-                        <button className="w-10 h-10 flex items-center justify-center bg-gray-200 text-blue-800 rounded-md hover:bg-gray-300 transition duration-300">3</button>
-                        <button className="w-10 h-10 flex items-center justify-center bg-gray-200 text-blue-800 rounded-md hover:bg-gray-300 transition duration-300">
-                            <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
-                            </svg>
-                        </button>
-                    </div>
-                </div>
+                 
             </div>
         </div>
     
-        {/* Edit Modal - unchanged */}
         {isModalOpen && editingRestaurant && (
             <div className="fixed inset-0 bg-black bg-opacity-75 flex items-center justify-center z-50">
                 <div className="bg-white p-8 rounded-xl shadow-2xl max-w-2xl w-full">
